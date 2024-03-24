@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plantkeeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>water your flowers</h1>
+    <h2>watch out for the rupses</h2>
+    <h3 id = "scoreDisplay"> SCORE : 0</h3>
+
+      
+    <p>
+      <img src="images/hart.png" alt="hartje" class="hartje" width="50">
+      
+    </p>
+
+<!-- 
+    <button id="waterButton">water</button>
+    <button id="waterButton2">meer water </button>
+    <button id="waterButton3">veel water </button>
+ -->
+
+
+    <div class = "kolom">
+    <div class = "gieterbox">
+    <img src="images/gieter.png" alt="gieter" id="dragImage" width="100" length="100">
+    </div>
+
+    <div class="container">
+          <img class="plant" src="images/plant1_1.png" alt="sprout 1" width="60">
+          <img class="plant" src="images/plant2_1.png" alt="sprout 2" width="60">
+          <img class="plant" src="images/plant3_1.png" alt="sprout 3" width="60">
+          <img class="plant" src="images/plant4_1.png" alt="sprout 4" width="60">
+          <img class="plant" src="images/plant5_1.png" alt="sprout 5" width="60">
+          <img class="plant" src="images/plant6_1.png" alt="sprout 6" width="60">
+          <img class="plant" src="images/plant7_1.png" alt="sprout 7" width="60">
+          <img class="plant" src="images/plant8_1.png" alt="sprout 8" width="60">
+        </div>
+</div>
+      
+      
+    <button id="audioButton">
+  <audio controls src="sounds/(Mother Earth's) Plantasia -- Mort Garson (1976) Full Album.mp3"> </audio> 
+    </button> 
+
+    <img src="images/rups.png" alt="rups" id="rups">
+
+    <div id="customAlert">
+      <img src="images/death.png" alt="game over">
+      <p>the rups killed your flowers</p>
+    </div>
+
+
+    <script src= "script.js"></script>
+    
+</body>
+</html>
