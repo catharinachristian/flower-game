@@ -2,9 +2,9 @@ body {
   background-image: url(images/background.png);
   background-repeat: no-repeat;
   background-size: 100vw;
-  
 }
 
+/* dit gaat over de tekst in het beeld  */
 h1, h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,15 +19,16 @@ h2:hover {
   color: red;
 }
 
+
 #scoreDisplay {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: x-large;
   font-weight:bold;
   text-transform: uppercase;
   color: darkblue;
-
 }
 
+/* flexboxen */
 .kolom {
   display: flex;
   justify-content: space-between;
@@ -40,8 +41,15 @@ display: flex;
 width: 25vw;
 }
 
+/* gieter, zou kunnen dat dit nou een beetje tegen me flexbox in gaat maar het werkt */
+.gieter {
+  cursor: copy; /* alsof je hem pakt  */
+  margin-bottom: 170px;
+  margin-left: 150px;
+  margin-right: 0;
+}
 .container {
-  padding-top: 270px;
+  padding-top: 290px;
   padding-right: 350px;
   height: 150px;
   display: flex;
@@ -50,19 +58,14 @@ width: 25vw;
   align-items: flex-end;
 }
 
+/* om wat meer ruimte russen plaatjes toe te voegen */
 .container img {
-  margin: 0 5px; /* Add margin to all sides of each image */
+  margin: 0 10px;
 }
-  
-/* #waterButton, #waterButton2, #waterButton3 {
-  padding: 10px;
-  font-size: 16px;
-  background-color: red;
-  color: #fff;
-} */
 
+/* het muziekje dat in het midden afgespeeld kan worden */
 #audioButton {
-  background-color: rgb(49, 142, 255); /* Background color */
+  background-color: rgb(49, 142, 255);
   border-radius: 5em;
   border: none;
   width: 100px; 
@@ -71,29 +74,26 @@ width: 25vw;
   justify-content: center;
   align-items: center;
   position: fixed; 
-  top: 50%; /* om dat ding i het midden te krijgen van de pagina */
+  top: 50%; /* volgens floris gebruik je volgende functies om dingen in het midden te krijgen */
   left: 50%; 
-  transform: translate(-50%, -50%); /* Adjust its position to center it perfectly */
-  
-
-}
-audio {
-  margin-left: 20px;
-}
-
-#dragImage {
-  position: absolute;
-  cursor: pointer;
+  transform: translate(-50%, -50%); 
+  /* hier de tekst in de button */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:medium;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: darkblue;
 }
 
+/* rups */
 
 #rups {
-  display: none; /* Initially hide the rups image */
+  display: none;
   border: red 10px dotted;
-  position: absolute; /* Position the rups image relative to the viewport */
-  top: 77%; /* Position the rups image vertically centered */
-  left: 25%; /* Position the rups image horizontally centered */
-  width: 175px; /* Set the width of the rups image */
+  position: absolute; 
+  top: 77%; /* hier weer die css */
+  left: 25%; 
+  width: 175px; 
 }
 
 #rups:hover {
@@ -101,11 +101,11 @@ audio {
 }
 
 /* game over */
+/* met behulp van code pen io opgezocht hoe je plaatje moet gebruiken als alert functie, zie js */
 
 #customAlert {
   display: none;
   position: fixed;
-
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -114,8 +114,7 @@ audio {
 #customAlert img {
   max-width: 100%;
   max-height: 100%;
-  margin-left: 3.7em;
-
+  margin-left: 3.7em; /* midden */
 }
 
 #customAlert p {
